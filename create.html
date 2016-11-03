@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menambah Daftar Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body{
+        font-family : lucida;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Menambah Daftar Menu</h1>
+
+    <form method="post" action="create.php" enctype="multipart/form-data">
+        <div>
+            <label>Nama Menu : </label>
+            <input type="text" name="nama" placeholder="Nama Menu" style="margin-left: 20px;"><br><br>
+        </div>
+        <div>
+            <label style="margin-left: 40px;">Harga : </label>
+            <input type="number" name="harga" placeholder="Harga" style="margin-left: 20px;">
+        </div>
+    
+        <div>
+            <input type="submit" value="Tambah" style="margin: 50px; padding: 50px;">
+        </div>
+    </form>
+</body>
+</html>
