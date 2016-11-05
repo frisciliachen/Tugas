@@ -2,6 +2,21 @@
 <html>
 <head>
 	<title>Daftar Menu</title>
+	<style type="text/css">
+	body{
+		text-align: center;
+	}
+		table, th, td{
+				border : 1px solid #C6C6C6;
+				border-collapse:collapse;
+				border-spacing:15px;
+				padding: 20px;
+				margin: 20px;	
+			}
+	.table{
+		margin-left: 425px;
+	}
+	</style>
 </head>
 <body>
 	<?php
@@ -18,6 +33,9 @@
 		;
 		$rows = $query->get_result();
 	?>
+	<h1> Daftar Menu </h1>
+
+	<div class="table">
 	<table>
 		<tr>
 			<th>ID </th>
@@ -40,5 +58,8 @@
 			}
 		?>
 	</table>
+	</div>
+	<a href="create.html"><input type="submit" value="Tambah Menu" style="margin: 50px;"></a><br><br>
+	<a href="logout.php"><input type="submit" value="Logout" style="margin: 50px;"></a>
 </body>
 </html>

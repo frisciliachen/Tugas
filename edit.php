@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>Mengupdate Menu</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 	<?php
@@ -29,19 +34,20 @@
 	<form method="post" action="update.php?ID=<?php echo $data->ID; ?>"> 
 		<div>
 			<label>ID : </label>
-			<span><?php echo $data->ID; ?></span>
+			<span><?php echo $data->ID; ?></span><br><br>
 		</div>
 		<div>
 			<label>Nama Menu :</label>
-			<input type="text" name="Nama" value="<?php echo $data->Nama; ?>">
+			<input type="text" name="Nama" value="<?php echo $data->Nama; ?>"><br><br>
 		</div>
 		<div>
 			<label>Harga :</label>
-			<input type="text" name="Harga" value="<?php echo $data->Harga; ?>">
+			<input type="text" name="Harga" value="<?php echo $data->Harga; ?>" style="margin-left: 42px;"><br><br>
 		</div>
 		
-		<div><input type="submit" value="Update"></div>
-
+		<div><input type="submit" value="Update"></div><br><br>
+		
 	</form>
+	<a href="read.php"><input type="submit" value="Kembali"></a>
 </body>
 </html>

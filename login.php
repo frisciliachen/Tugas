@@ -30,6 +30,7 @@ if(isset($_GET["username"]) && isset($_GET["password"])) {
 
 		if($result->num_rows == 1){
 		$_SESSION["username"] = $username;
+		$_SESSION["password"] = $password;
 		header("Location: content.php");	
 	
 	} else {
@@ -43,6 +44,7 @@ if(isset($_GET["username"]) && isset($_GET["password"])) {
 		echo '<script language="javascript">alert("Username or Password Wrong! Try Again!")</script>';
 	}
  ?>
-
+<a href="read.php"><input type="submit" value="Lihat Menu" style="margin: 50px;"></a>
+<a href="create.html"><input type="submit" value="Tambah Menu" style="margin: 50px;"></a>
  </body>
 </html>

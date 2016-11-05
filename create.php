@@ -25,10 +25,11 @@ if (isset($_POST["nama"]) && isset($_POST["harga"])) {
     if (! $result)
         die("<p>Proses query gagal.</p>");
 
-    echo "<p>Data produk berhasil ditambahkan.</p>";
+    echo "<p>Data menu berhasil ditambahkan.</p>";
 } else {
-    echo "<p>Data produk belum diisi!</p>";
+    echo "<p>Data menu belum diisi!</p>";
 }
 ?>
+<a href="read.php"><input type="submit" value="Lihat Menu" style="margin: 50px;  padding: 20px;"></a>
 </body>
 </html>

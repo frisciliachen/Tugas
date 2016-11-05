@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>Hapus menu</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 <?php
@@ -34,5 +39,6 @@ if($result)
 else
 	echo"<p>Gagal mendelete menu</p>";
 ?>
+<a href="read.php"><input type="submit" value="Lihat Menu" style="margin: 50px; padding: 20px;"></a>
 </body>
 </html>

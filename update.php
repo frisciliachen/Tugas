@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>Update Data Menu</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
 <?php 
@@ -41,5 +46,6 @@ else
 	echo "<p>Gagal Mengupdate Data menu</p>";
 
 ?>
+<a href="read.php"><input type="submit" value="Lihat Menu" style="margin: 50px; padding: 20px;"></a>
 </body>
 </html>
